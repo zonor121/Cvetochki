@@ -1,18 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Цветочный магазин "Садовая"</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <h1>Hello World</h1>
-    <h2>
-        <div>
-            good morning ma boy
-        </div>
-    </h2>
-    <p>Hello World</p>
+  <!-- Шапка -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Садовая</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="#home">Главная</a></li>
+          <li><a href="#products">Цветы</a></li>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+  <!-- Герой-секция -->
+  <section class="hero" id="home">
+    <div class="container">
+      <h2>Свежие букеты<br>для вашего настроения</h2>
+      <p>Доставка по городу за 2 часа | Бесплатная консультация флориста</p>
+      <button class="btn">Заказать сейчас</button>
+    </div>
+  </section>
+
+  <!-- Каталог -->
+  <section class="products" id="products">
+    <div class="container">
+      <h3>Популярные букеты</h3>
+      <div class="product-grid">
+        <!-- Пример карточки -->
+        <div class="product-card">
+          <img src="images/bouquet1.jpg" alt="Букет роз" />
+          <h4>Романтический букет</h4>
+          <p>15 роз + лилии, упаковка шелком</p>
+          <span class="price">2 990 ₽</span>
+          <button class="btn">Заказать</button>
+        </div>
+        <!-- Добавьте ещё карточки -->
+      </div>
+    </div>
+  </section>
+
+  <!-- О нас -->
+  <section class="about" id="about">
+    <div class="container">
+      <h3>Почему выбирают нас?</h3>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Мы создаем уникальные букеты из свежих цветов, собранных утром. Наши флористы имеют более 10 лет опыта.</p>
+          <ul>
+            <li>Бесплатная доставка при заказе от 3 000 ₽</li>
+            <li>Гарантия свежести до 7 дней</li>
+            <li>Персональный подход к каждому клиенту</li>
+          </ul>
+        </div>
+        <div class="about-image">
+          <img src="images/team.jpg" alt="Команда флористов" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Отзывы -->
+  <section class="testimonials">
+    <div class="container">
+      <h3>Что говорят клиенты</h3>
+      <div class="testimonial">
+        <p>"Лучший букет для моей невесты! Цветы были идеальными."</p>
+        <strong>— Екатерина, Москва</strong>
+      </div>
+      <div class="testimonial">
+        <p>"Быстрая доставка и очень внимательные флористы!"</p>
+        <strong>— Алексей, Санкт-Петербург</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h3>Свяжитесь с нами</h3>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Имя" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <textarea id="message" placeholder="Сообщение" required></textarea>
+        <button type="submit" class="btn">Отправить</button>
+      </form>
+      <div class="contact-info">
+        <p>📍 г. Москва, ул. Цветочная, д. 12</p>
+        <p>📞 +7 (495) 123-45-67</p>
+        <p>🕒 Пн-Вс: 9:00 - 21:00</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Подвал -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Цветочный магазин "Садовая"</p>
+      <div class="socials">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Подключение JS -->
+  <script src="js/main.js"></script>
 </body>
 </html>
